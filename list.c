@@ -71,7 +71,7 @@ void * lastList(List * list) {
     }
     void * dato1 = list->tail->data;
     list->current = list->current->prev;
-    return NULL;
+    return dato1;
 }
 
 void * prevList(List * list) {
