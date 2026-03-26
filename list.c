@@ -100,8 +100,10 @@ void * popCurrent(List * list) {
         list->head = der;
         der->prev = NULL;
     }
+    else{
     izq->next = der;
     der->prev = izq;
+    }
     return aux;
 }
 
