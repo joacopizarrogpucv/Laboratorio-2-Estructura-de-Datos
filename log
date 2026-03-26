@@ -40,3 +40,17 @@ Thu Mar 26 07:30:54 PM UTC 2026:
  1 file changed, 2 insertions(+)
  tests:  0|0
 f8f83fa
+Thu Mar 26 07:34:08 PM UTC 2026: 
+ list.c | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:97:12: error: unused variable ‘der’ [-Werror=unused-variable]
+   97 |     Node * der = list->current->next;
+      |            ^~~
+list.c:96:12: error: unused variable ‘izq’ [-Werror=unused-variable]
+   96 |     Node * izq = list->current->prev;
+      |            ^~~
+cc1: all warnings being treated as errors
+b59e12b
