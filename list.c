@@ -70,7 +70,7 @@ void * lastList(List * list) {
         return NULL;
     }
     void * dato1 = list->tail->data;
-    list->current = list->current->prev;
+    list->current = list->tail;
     return dato1;
 }
 
