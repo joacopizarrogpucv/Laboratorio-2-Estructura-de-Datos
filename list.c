@@ -88,8 +88,11 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
     Node * nuevo = createNode(data);
+    if (list->head == NULL){
+        return;
+    }
     nuevo->next = list->head;
-    list->head = nuevo;
+    list->head->prev = nuevo;
     pushCurrent(list,data);
 }
 
