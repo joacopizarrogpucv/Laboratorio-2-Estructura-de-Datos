@@ -171,3 +171,21 @@ list.c:92:22: error: assignment to ‘Node *’ from incompatible pointer type �
    92 |     list->head->prev = nuevo;
       |                      ^
 b5ebbe7
+Sun Mar 29 12:59:37 AM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:90:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+   90 |     Nodo * nuevo = createNode(data);
+      |     ^~~~
+      |     Node
+list.c:90:20: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   90 |     Nodo * nuevo = createNode(data);
+      |                    ^~~~~~~~~~
+list.c:91:10: error: request for member ‘next’ in something not a structure or union
+   91 |     nuevo->next = list->head;
+      |          ^~
+list.c:92:22: error: assignment to ‘Node *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+   92 |     list->head->prev = nuevo;
+      |                      ^
+90626b5
