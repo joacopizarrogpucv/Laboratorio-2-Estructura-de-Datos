@@ -189,3 +189,8 @@ list.c:92:22: error: assignment to ‘Node *’ from incompatible pointer type �
    92 |     list->head->prev = nuevo;
       |                      ^
 90626b5
+Sun Mar 29 01:00:13 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+576d063
