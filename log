@@ -249,3 +249,8 @@ list.c:113:25: error: expected identifier before ‘=’ token
   113 |     nuevo->next->prev-> = nuevo;
       |                         ^
 7d87c5d
+Sun Mar 29 07:05:05 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+fb19e00
