@@ -270,3 +270,13 @@ Sun Mar 29 07:23:03 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 4f8f1d7
+Sun Mar 29 11:00:59 PM UTC 2026: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:118:5: error: expected ‘}’ before ‘else’
+  118 |     else if (list->current->next == NULL){
+      |     ^~~~
+3cd4d16
