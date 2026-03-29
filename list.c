@@ -117,8 +117,8 @@ void pushCurrent(List * list, void * data) {
         list->head->next = nuevo;
     } else if (list->current->next == NULL){
         nuevo->prev = list->tail;
-        nuevo->next = NULL;
         list->tail->next = nuevo;
+        list->tail = NULL;
     } else {
         nuevo->prev = list->current;
         nuevo->next = list->current->next;
